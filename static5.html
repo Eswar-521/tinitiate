@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static CMS</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome & Devicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Web Components for Markdown -->
+  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header text-center py-3 bg-dark text-white">
+  <h1><i class="fas fa-code"></i> Tinitiate Static CMS <i class="fas fa-code"></i></h1>
+</header>
+
+<!-- Carousel Container -->
+<div class="carousel-container">
+  <div id="readmeCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="readme-card">
+          <h3></h3>
+          <zero-md src="assets/README4.md"></zero-md>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="readme-card">
+          <h3></h3>
+          <zero-md src="assets/README5.md"></zero-md>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="readme-card">
+          <h3></h3>
+          <zero-md src="assets/README6.md"></zero-md>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#readmeCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#readmeCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+<!-- Fixed Footer -->
+<!-- <footer class="footer">
+  <p> ©2025 README Carousel | Powered by Tech</p>
+</footer> -->
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

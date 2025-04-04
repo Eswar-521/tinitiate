@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make Carousel Take Full Page Height */
+.carousel-container {
+  flex-grow: 1; /* Makes the carousel take all available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Carousel Items Styling */
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Takes up most of the screen */
+  padding: 20px;
+}
+
+/* README Content Box */
+.readme-card {
+  width: 80%;
+  min-height: 60vh; /* Ensures uniform height */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+}
+
+/* Fixed Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
